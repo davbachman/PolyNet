@@ -1,73 +1,32 @@
-# React + TypeScript + Vite
+# PolyNet
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive 3D polyhedron visualization tool. Select a Platonic solid, apply geometric transformations, unfold it into a flat net, and export the result.
 
-Currently, two official plugins are available:
+**[Launch PolyNet](https://davbachman.github.io/PolyNet/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How to Use
 
-## React Compiler
+1. **Choose a solid** -- Use the dropdown in the toolbar to pick from the five Platonic solids: tetrahedron, cube, octahedron, dodecahedron, or icosahedron.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+2. **Transform it** -- Click **+ Stellate** or **+ Truncate** in the sidebar to add operations. Drag the slider to control the amount. Stack multiple operations to create complex shapes. Remove any step with the **x** button.
 
-## Expanding the ESLint configuration
+3. **Unfold it** -- Click the **Unfold** button to animate the solid unfolding into a flat net. Click **Fold** to reverse the animation.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+4. **Rotate the view** -- Click and drag on the 3D canvas to orbit around the solid. Scroll to zoom in and out.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+5. **Export** -- Use **Export OBJ** to download a 3D model file, or **Export PNG** to save an image of the unfolded net.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Running Locally
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Tech Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+React, TypeScript, Three.js (via React Three Fiber), Vite
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+*Created by David Bachman with GPT 5.3 codex and Opus 4.6*
