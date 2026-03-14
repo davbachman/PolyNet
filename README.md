@@ -4,7 +4,7 @@ An interactive 3D polyhedron visualization tool. Select a Platonic solid, apply 
 
 **[Launch PolyNet](https://davbachman.github.io/PolyNet/)**
 
-Created by David Bachman with GPT-5 Codex
+Created by David Bachman with GPT-5.4
 
 To learn more about David Bachman and his work visit https://pzacad.pitzer.edu/~dbachman/ and subscribe to his AI substack *Entropy Bonus* at https://profbachman.substack.com
 
