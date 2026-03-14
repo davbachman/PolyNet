@@ -4,6 +4,10 @@ An interactive 3D polyhedron visualization tool. Select a Platonic solid, apply 
 
 **[Launch PolyNet](https://davbachman.github.io/PolyNet/)**
 
+Created by David Bachman with GPT-5 Codex
+
+To learn more about David Bachman and his work visit https://pzacad.pitzer.edu/~dbachman/ and subscribe to his AI substack *Entropy Bonus* at profbachman.substack.com
+
 ## How to Use
 
 1. **Choose a solid** -- Use the dropdown in the toolbar to pick from the five Platonic solids: tetrahedron, cube, octahedron, dodecahedron, or icosahedron.
@@ -26,7 +30,3 @@ npm run dev
 ## Tech Stack
 
 React, TypeScript, Three.js (via React Three Fiber), Vite
-
----
-
-*Created by David Bachman with GPT 5.3 codex and Opus 4.6*
