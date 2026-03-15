@@ -19,14 +19,3 @@ To learn more about David Bachman and his work visit https://pzacad.pitzer.edu/~
 4. **Rotate the view** -- Click and drag on the 3D canvas to orbit around the solid. Scroll to zoom in and out.
 
 5. **Export** -- Use **Export OBJ** to download a 3D model file, or **Export PNG** to save an image of the unfolded net.
-
-## Running Locally
-
-```
-npm install
-npm run dev
-```
-
-## Tech Stack
-
-React, TypeScript, Three.js (via React Three Fiber), Vite
